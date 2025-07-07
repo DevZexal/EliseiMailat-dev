@@ -165,39 +165,60 @@ section h2 {
 }
 
 @media screen and (max-width: 768px) {
-
     body {
-        padding: 40px;
+        padding: 20px;
+        font-size: 14px;
     }
 
     .container {
-        padding: 30px 20px;
-        border-radius: 20px;
+        padding: 20px 15px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        max-width: 95%;
+    }
+
+    .profile {
+        margin-bottom: 2px;
     }
 
     .profile img {
-        width: 140px;
-        height: 140px;
+        width: 100px;
+        height: 100px;
+        border-radius: 20%;
+        border: 3px solid #082567;
     }
 
     .profile h1 {
-        font-size: 1.5em;
+        font-size: 1.3em;
+        margin-top: 10px;
     }
 
     .profile p {
-        font-size: 1em;
+        font-size: 0.95em;
+        margin-top: 4px;
     }
 
     .sections-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
 
     section {
+        margin: 20px;
+        padding: 30px;
         height: auto;
-        padding: 20px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        font-size: 0.85em;
+        border-radius: 16px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
         transition: none;
+    }
+
+    section h2 {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
     }
 
     section:hover {
@@ -205,21 +226,28 @@ section h2 {
         background-color: #f9f9f9;
     }
 
-    section h2 {
-        font-size: 1.3em;
-        justify-content: center;
-        text-align: center;
-    }
-
     section:hover h2 {
         transform: none;
     }
 
     section .content {
-        opacity: 1;
-        visibility: visible;
-        max-height: none;
-        padding: 10px;
-        transition: none;
+        opacity: 1 !important;
+        visibility: visible !important;
+        max-height: none !important;
+        padding: 10px 0;
+        transition: none !important;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        margin-top: 30px;
+        font-size: 0.8em;
     }
 }
